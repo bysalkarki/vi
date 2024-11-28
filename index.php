@@ -125,28 +125,24 @@ include("config.php");
                                 <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s">
                                     <i class="flaticon-rent text-success flat-medium" aria-hidden="true"></i>
                                     <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Selling Service</a></h5>
-                                    <p>This is a dummy text for filling out spaces. Just some random words...</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s">
                                     <i class="flaticon-for-rent text-success flat-medium" aria-hidden="true"></i>
                                     <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Rental Service</a></h5>
-                                    <p>This is a dummy text for filling out spaces. Just some random words...</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s">
                                     <i class="flaticon-list text-success flat-medium" aria-hidden="true"></i>
                                     <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Property Listing</a></h5>
-                                    <p>This is a dummy text for filling out spaces. Just some random words...</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s">
                                     <i class="flaticon-diagram text-success flat-medium" aria-hidden="true"></i>
                                     <h5 class="text-secondary hover-text-success py-3 m-0"><a href="#">Legal Investment</a></h5>
-                                    <p>This is a dummy text for filling out spaces. Just some random words...</p>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +180,7 @@ include("config.php");
                                                     <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18']; ?>" alt="pimage">
                                                         <div class="featured bg-success text-white">New</div>
                                                         <div class="sale bg-success text-white text-capitalize">For <?php echo $row['5']; ?></div>
-                                                        <div class="price text-primary"><b>$<?php echo $row['13']; ?> </b><span class="text-white"><?php echo $row['12']; ?> Sqft</span></div>
+                                                        <div class="price text-primary"><b>Rs.<?php echo $row['13']; ?> </b><span class="text-white"><?php echo $row['12']; ?> Sqft</span></div>
                                                     </div>
                                                     <div class="featured-thumb-data shadow-one">
                                                         <div class="p-3">
@@ -234,21 +230,18 @@ include("config.php");
                                         <i class="flaticon-reward flat-medium float-left d-table mr-4 text-success" aria-hidden="true"></i>
                                         <div class="pl-2">
                                             <h5 class="mb-3">Top Rated</h5>
-                                            <p>This is a dummy text for filling out spaces. This is just a dummy text for filling out blank spaces.</p>
                                         </div>
                                     </li>
                                     <li class="mb-4 text-white d-flex">
                                         <i class="flaticon-real-estate flat-medium float-left d-table mr-4 text-success" aria-hidden="true"></i>
                                         <div class="pl-2">
                                             <h5 class="mb-3">Experience Quality</h5>
-                                            <p>This is a dummy text for filling out spaces. This is just a dummy text for filling out blank spaces.</p>
                                         </div>
                                     </li>
                                     <li class="mb-4 text-white d-flex">
                                         <i class="flaticon-seller flat-medium float-left d-table mr-4 text-success" aria-hidden="true"></i>
                                         <div class="pl-2">
                                             <h5 class="mb-3">Experienced Agents</h5>
-                                            <p>This is a dummy text for filling out spaces. This is just a dummy text for filling out blank spaces.</p>
                                         </div>
                                     </li>
                                 </ul>

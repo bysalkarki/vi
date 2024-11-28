@@ -97,13 +97,11 @@ include("config.php");
                                 <?php
 
                                 if (isset($_REQUEST['filter'])) {
-                                    $type = $_REQUEST['type'];
-                                    $stype = $_REQUEST['stype'];
-                                    $city = $_REQUEST['city'];
+                                    $type = strtolower($_REQUEST['type']);
+                                    $stype = strtolower($_REQUEST['stype']);
+                                    $city = strtolower($_REQUEST['city']);
 
-                                    $sql = "SELECT property.*, user.uname FROM `property`,`user` WHERE property.uid=user.uid and type='{$type}' and stype='{$stype}' and city='{$city}'";
-                                    //SELECT * FROM `property` WHERE type='office' or type='office' and stype='sale' or stype='rent' and city='valsad' OR state='mumbai'
-                                    //SELECT * FROM `property` WHERE type='office' and stype='sale'  and city='valsad' OR state='mumbai'
+                                    $sql = "SELECT property.*, user.uname FROM `property`,`user` WHERE property.uid=user.uid and LOWER(type)='{$type}' and LOWER(stype)='{$stype}' and LOWER(city)='{$city}'";
                                     $result = mysqli_query($con, $sql);
 
                                     if (mysqli_num_rows($result) > 0) {
@@ -116,7 +114,7 @@ include("config.php");
                                                         <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18']; ?>" alt="pimage">
 
                                                             <div class="sale bg-success text-white">For <?php echo $row['5']; ?></div>
-                                                            <div class="price text-primary text-capitalize">$<?php echo $row['13']; ?> <span class="text-white"><?php echo $row['12']; ?> Sqft</span></div>
+                                                            <div class="price text-primary text-capitalize">Rs.<?php echo $row['13']; ?> <span class="text-white"><?php echo $row['12']; ?> Sqft</span></div>
 
                                                         </div>
                                                         <div class="featured-thumb-data shadow-one">
@@ -168,7 +166,7 @@ include("config.php");
                                     <label class="sr-only">Property Amount</label>
                                     <div class="input-group mb-2 mr-sm-2">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text">$</div>
+                                            <div class="input-group-text">Rs.</div>
                                         </div>
                                         <input type="text" class="form-control" name="amount" placeholder="Property Price">
                                     </div>
@@ -177,7 +175,7 @@ include("config.php");
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                         </div>
-                                        <input type="text" class="form-control" name="month" placeholder="Duration Year">
+                                        <input type="text" class="form-control" name="month" placeholder="Duration Month">
                                     </div>
                                     <label class="sr-only">Interest Rate</label>
                                     <div class="input-group mb-2 mr-sm-2">

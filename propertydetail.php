@@ -123,7 +123,7 @@ include("config.php");
                                         <span class="mb-sm-20 d-block text-capitalize"><i class="fas fa-map-marker-alt text-success font-12"></i> &nbsp;<?php echo $row['14']; ?></span>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="text-success text-left h5 my-2 text-md-right">$<?php echo $row['13']; ?></div>
+                                        <div class="text-success text-left h5 my-2 text-md-right">Rs. <?php echo $row['13']; ?></div>
                                         <div class="text-left text-md-right">Price</div>
                                     </div>
                                 </div>
@@ -257,7 +257,7 @@ include("config.php");
                                 <label class="sr-only">Property Amount</label>
                                 <div class="input-group mb-2 mr-sm-2">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text">$</div>
+                                        <div class="input-group-text">Rs.</div>
                                     </div>
                                     <input type="text" class="form-control" name="amount" placeholder="Property Price">
                                 </div>
@@ -266,7 +266,7 @@ include("config.php");
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                     </div>
-                                    <input type="text" class="form-control" name="month" placeholder="Duration Year">
+                                    <input type="text" class="form-control" name="month" placeholder="Duration Month">
                                 </div>
                                 <label class="sr-only">Interest Rate</label>
                                 <div class="input-group mb-2 mr-sm-2">
