@@ -1,6 +1,6 @@
 /*
 Author       : Dreamguys
-Template Name: Ventura - Bootstrap Admin Template
+Template Name: BCA - Bootstrap Admin Template
 Version      : 1.0
 */
 
